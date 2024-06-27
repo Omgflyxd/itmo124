@@ -9,7 +9,7 @@ public class Main {
         System.out.println("знаю");
         System.out.println("Java.");
 
-        int x = (46 + 10) * (10 / 3);
+        int x = (46 + 10) * (10 / 3);  //logic
         System.out.println(x);
         int y = (29) * (4) * (-15);
         System.out.println(y);
