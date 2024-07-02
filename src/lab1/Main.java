@@ -14,7 +14,7 @@ public class Main {
         int y = (29) * (4) * (-15);
         System.out.println(y);
 
-        int number = 10500;
+        double number = 10500;
         double result = (double) (number / 10) / 10;
         System.out.println(result);
 
