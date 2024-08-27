@@ -24,5 +24,17 @@ public class Main {
         System.out.println(car);
         System.out.println(carDefault);
 
+        Car.setBrand("Toyota");
+        Car.setModel("Crown");
+        Car.setSeatPlace(5);
+
+        String brand = Car.getBrand();
+        String model = Car.getModel();
+        int seatPlace = Car.getSeatPlace();
+
+        System.out.println("Car Brand: " + brand);
+        System.out.println("Car Model: " + model);
+        System.out.println("Seat Place: " + seatPlace);
+
     }
 }

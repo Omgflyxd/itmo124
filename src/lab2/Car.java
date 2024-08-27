@@ -1,17 +1,35 @@
 package lab2;
 
 public class Car {
-    private String brand;
-    private String model;
-    private Integer seatPlace;
+    private static String brand;
+    private static String model;
+    private static Integer seatPlace;
 
     public Car() {
     }
 
     public Car(String brand, String model, String seatPlace) {
-        this.brand = brand;
-        this.model = model;
-        this.seatPlace = Integer.valueOf(seatPlace);
+        Car.brand = brand;
+        Car.model = model;
+        Car.seatPlace = Integer.valueOf(seatPlace);
+    }
+    public static String getBrand() {
+        return brand;
+    }
+    public static void setBrand(String brand) {
+        Car.brand = brand;
+    }
+    public static String getModel() {
+        return model;
+    }
+    public static void setModel(String model) {
+        Car.model = model;
+    }
+    public static int getSeatPlace() {
+        return seatPlace;
+    }
+    public static void setSeatPlace(int seatPlace) {
+        Car.seatPlace = seatPlace;
     }
     @Override
     public String toString() {
@@ -21,24 +39,7 @@ public class Car {
                 ", seatPlace=" + seatPlace +
                 '}';
     }
-    public String getBrand() {
-        return brand;
-    }
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-    public String getModel() {
-        return model;
-    }
-    public void setModel(String model) {
-        this.model = model;
-    }
-    public int getSeatPlace() {
-        return seatPlace;
-    }
-    public void setSeatPlace(int seatPlace) {
-        this.seatPlace = seatPlace;
-    }
+
 }
 
 
